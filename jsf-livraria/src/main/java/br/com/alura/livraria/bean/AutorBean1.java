@@ -6,7 +6,7 @@ import br.com.alura.livraria.dao.DAO;
 import br.com.alura.livraria.modelo.Autor;
 
 @ManagedBean
-public class AutorBean {
+public class AutorBean1 {
 	
 	private Autor autor = new Autor();
 
