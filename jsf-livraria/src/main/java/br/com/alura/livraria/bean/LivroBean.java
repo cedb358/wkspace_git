@@ -17,9 +17,9 @@ public class LivroBean {
 	public void gravar() {
         System.out.println("Gravando livro " + this.livro.getTitulo());
         
-       // if(livro.getAutores().isEmpty()) {
-        	//throw new RuntimeException("Livro deve ter pelo menos um Autor");
-       // }
+        if(livro.getAutores().isEmpty()) {
+        	throw new RuntimeException("Livro deve ter pelo menos um Autor");
+        }
         
         new DAO<Livro>(Livro.class).adiciona(this.livro);
     }
